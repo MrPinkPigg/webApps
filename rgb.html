@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html id="textColor">
+	<head>
+		<script type="text/javascript">
+			function randColor () {
+				var code1 = (Math.floor(Math.random()*255));
+				var code2 = (Math.floor(Math.random()*255));
+				var code3 = (Math.floor(Math.random()*255));
+
+				var color = "rgb("+code1+", "+code2+", "+code3+")";
+
+				console.log(color);
+				return color;
+			}
+
+			function backgroundColor () {
+				document.body.style.background = randColor();
+			}
+
+			function textColor () {
+				document.getElementById("textColor").style.color = randColor();
+			}
+		</script>
+	
+		<style>
+			#size {
+				font-size: 70px;
+			}
+		</style>
+	</head>
+
+	<body onload="backgroundColor(); textColor();">
+		<h1 id="size">It'll be a new color whenever you reload</h1>
+	</body>
+</html>
+
+

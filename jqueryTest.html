@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$("input").click(function() {
+    		var img = $("#mrbean");
+    	
+    		if (img.width() < 200) {
+        		img.animate({width: "200px", height: "200px"}, 1000);
+    		}
+    		else {
+        		img.animate({width: img.attr("width"), height: img.attr("height")}, 1000);
+    		}
+			});
+		});
+	</script>
+</head>
+<body>
+	<img id="mrbean" src="http://2.bp.blogspot.com/-C6KY8tsc8Fw/T-SVFnncxjI/AAAAAAAAANw/FMiNzA8Zecw/s640/mr.bean.jpg" width="50" height="50" />
+	<input type="button" value="Increase image size" />
+</body>
+</html>

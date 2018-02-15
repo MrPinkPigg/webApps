@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Gallery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">	
+		function randColor () {
+				var code1 = (Math.floor(Math.random()*255));
+				var code2 = (Math.floor(Math.random()*255));
+				var code3 = (Math.floor(Math.random()*255));
+
+				var color = "rgb("+code1+", "+code2+", "+code3+")";
+
+				//console.log(color);
+				return color;
+			}
+
+		function textColor () {
+				document.getElementById("textColor").style.color = randColor();
+			}
+
+		setInterval(textColor, 100);
+
+		$(function() {
+			$("#image1").click(function() {
+				var img1 = $("#image1");
+
+				if(img1.width() < 1000) {
+					img1.animate({width:"1000px", height:"1000px"}, 1000);
+				}
+				else {
+					img1.animate({width:"50px", height:"50px"}, 1000);
+				}
+			});
+
+			$("#image2").click(function() {
+				var img2 = $("#image2");
+
+				if(img2.width() < 1000) {
+					img2.animate({width:"1000px", height:"1000px"}, 1000);
+				}
+				else {
+					img2.animate({width:"50px", height:"50px"}, 1000);
+				}
+			});
+
+			$("#image3").click(function() {
+				var img3 = $("#image3");
+
+				if(img3.width() < 1000) {
+					img3.animate({width:"1000px", height:"1000px"}, 1000);
+				}
+				else {
+					img3.animate({width:"50px", height:"50px"}, 1000);
+				}
+			});
+
+			$("#image4").click(function() {
+				var img4 = $("#image4");
+
+				if(img4.width() < 1000) {
+					img4.animate({width:"1000px", height:"1000px"}, 1000);
+				}
+				else {
+					img4.animate({width:"50px", height:"50px"}, 1000);
+				}
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		html {
+			background-color: #ece813;
+
+			background: linear-gradient(316deg, #ece813, #000000);
+			background-size: 400% 400%;
+
+			-webkit-animation: AnimationName 12s ease infinite;
+			-moz-animation: AnimationName 12s ease infinite;
+			animation: AnimationName 12s ease infinite;
+		}
+
+		@-webkit-keyframes AnimationName {
+		    0%{background-position:2% 0%}
+		    50%{background-position:99% 100%}
+		    100%{background-position:2% 0%}
+		}
+
+		@-moz-keyframes AnimationName {
+		    0%{background-position:2% 0%}
+		    50%{background-position:99% 100%}
+		    100%{background-position:2% 0%}
+		}
+
+		@keyframes AnimationName { 
+		    0%{background-position:2% 0%}
+		    50%{background-position:99% 100%}
+		    100%{background-position:2% 0%}
+		}
+
+
+		h1 {
+			text-align: center;
+			font-size: 70px;
+		}
+		h2 {
+			text-align: center;
+			font-size: 30px;
+			color: #00cccc;
+		}
+		p {
+			text-align: center;
+			color: #66ff66;
+		}
+		img {
+			position: relative;
+		}
+
+
+		.grid-container {
+  			display: grid;
+  			grid-template-columns: auto auto auto auto;
+		}
+		.grid-item {
+  			padding: 50px;
+  			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 id="big">🎩🙈🙏🏻🙏🏻🙈🎩</h1>
+	<h1 id="textColor">🅱arry's 🅱angin 🅱hoto 🅱allery</h1>
+	<h2 id="small">🦐🦐 (click the pictures) 🦐🦐</h2>
+
+	<div class="grid-container">
+		<div class="grid-item"></div>
+		<div class="grid-item"><img id="image1" height="50" width="50" src="https://image.ibb.co/muVYi7/bees_by_emrealdbunny_dbg97ru.jpg"></img></div>
+		<div class="grid-item"><img id="image2" height="50" width="50" src="https://image.ibb.co/nkkxbS/20331.png"></img></div>
+		<div class="grid-item"></div>
+
+		<div class="grid-item"></div>
+		<div class="grid-item"><img id="image3" height="50" width="50" src="https://image.ibb.co/cPnXAn/2507950.jpg"></img></div>
+		<div class="grid-item"><img id="image4" height="50" width="50" src="https://image.ibb.co/kWk8i7/Pt_VOy_Fq_Uyojue_RH_400x400_no_Pad.jpg"></img></div>
+		<div class="grid-item"></div>
+	</div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+	<p>there was some black bar showing up so i did this</p>	
+</body>
+</html>
