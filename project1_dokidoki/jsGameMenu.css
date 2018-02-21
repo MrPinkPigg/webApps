@@ -1,0 +1,50 @@
+.item1 { grid-area: header; }
+.item3 { grid-area: buttons; }
+.item4 { grid-area: main; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'buttons main main main'
+    'buttons main main main';
+  grid-gap: 10px;
+}
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+html { 
+  background: url(./assets/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+	color: crimson;
+	font-size: 50;
+	background-color: #867979;
+}
+
+.button{
+	display:block;
+	border-style: solid;
+	border-color: #bbb #888 #666 #aaa;
+	border-width: 3px 4px 4px 3px;
+	width: 9em;
+	height: 2em;
+	background: #ccc;
+	color: crimson;
+	line-height: 2;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 900;
+}
+.button:hover{
+	border-color: #666 #aaa #bbb #888;
+	border-width: 4px 3px 3px 4px;
+	color: yellow;
+}

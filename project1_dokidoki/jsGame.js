@@ -1,20 +1,22 @@
-function load () {
+var script = document.createElement('script');
+script.src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+script.type = 'text/javascript';
+
+const $ = require('jquery');
+
+function loadGame () {
 	var audio = new Audio("./assets/music.mp3");
 	audio.play();
+
+	$(function(){
+		$("#start").onLoad(function(){
+        	$("#wal").fadeIn(100);
+    	});
+	})
 }
 
-function randColor () {
-	var code1 = (Math.floor(Math.random()*255));
-	var code2 = (Math.floor(Math.random()*255));
-	var code3 = (Math.floor(Math.random()*255));
 
-	var color = "rgb("+code1+", "+code2+", "+code3+")";
-	//console.log(color);
-	return color;
+function start () {
+	alert("test");
 }
 
-function textColor () {
-	document.getElementById("textColor").style.color = randColor();
-}
-
-setInterval(textColor, 100);
