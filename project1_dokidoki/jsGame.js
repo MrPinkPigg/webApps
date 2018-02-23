@@ -3,6 +3,15 @@ function loadGame () {
 	audio.play();
 }
 
+var text = [
+	"Welcome to Doki Doki ACM!",
+	
+];
+
 $(function(){
 	$('#fadeIn').fadeIn(4000);
 });
+
+function changeText() {
+	document.getElementById('text').innerHTML = 'test';
+}

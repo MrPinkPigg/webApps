@@ -3,7 +3,7 @@
 .item3 { grid-area: center; }
 .item4 { grid-area: right; }
 .item5 { grid-area: menu; }
-.item6 { grid-area: footer; }
+.item6 { grid-area: footer; background-color: #33adff;}
 
 .grid-container {
   display: grid;
@@ -35,7 +35,6 @@ h1 {
 
 h2 {
 	font-size: 40;
-	background-color: blue;
 	text-align: left;
 }
 
