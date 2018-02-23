@@ -1,13 +1,16 @@
 .item1 { grid-area: header; }
-.item3 { grid-area: buttons; }
-.item4 { grid-area: main; }
+.item2 { grid-area: left; }
+.item3 { grid-area: center; }
+.item4 { grid-area: right; }
+.item5 { grid-area: menu; }
+.item6 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header'
-    'buttons main main main'
-    'buttons main main main';
+    'header header header'
+    'left center right'
+    'menu footer footer';
   grid-gap: 10px;
 }
 .grid-container > div {
@@ -27,6 +30,17 @@ h1 {
 	color: crimson;
 	font-size: 50;
 	background-color: #867979;
+	text-align: center;
+}
+
+h2 {
+	font-size: 40;
+	background-color: blue;
+	text-align: left;
+}
+
+img {
+	display: none;
 }
 
 .button{
@@ -47,4 +61,20 @@ h1 {
 	border-color: #666 #aaa #bbb #888;
 	border-width: 4px 3px 3px 4px;
 	color: yellow;
+}
+
+
+#fade img {
+    opacity: 0;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+#fade img.load {
+    opacity: 1;
 }

@@ -6,7 +6,6 @@
   display: grid;
   grid-template-areas:
     'header header header header'
-    'buttons main main main'
     'buttons main main main';
   grid-gap: 10px;
 }

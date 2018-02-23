@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html id="start" lang="en">
+<html onload="loadGame()" lang="en">
 <head>
-	<script type="text/javascript" src="./jsGame.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./jsGame.js"></script>
 	<link rel="stylesheet" href="./jsGame.css">
 
 	<meta charset="UTF-8">
 	<title>Game</title>
 </head>
-<body onload="loadGame()">
-	<img id="wal" width="200" height="300" src="./assets/waluigi.png">
+<body>
+	<div class="grid-container">
+		<div class="item1"><h1>Doki Doki ACM</h1></div>
+		<div class="item3"><img id="fadeIn" width="400" height="550" src="./assets/waluigi.png"></div>
+		<div class="item5"><a class="button" href="./jsGameMenu.html">Return to Menu</a></div>
+		<div class="item6"><h2>Welcome too Doki Doki ACM!</h2></div>
+	</body>
+	
 </body>
 </html>
