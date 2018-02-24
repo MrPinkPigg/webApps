@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html onload="loadGame()" lang="en">
+<html lang="en">
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./jsGame.js"></script>
@@ -8,12 +8,14 @@
 	<meta charset="UTF-8">
 	<title>Game</title>
 </head>
-<body>
+<body  onload="loadGame()">
 	<div class="grid-container">
 		<div class="item1"><h1>Doki Doki ACM</h1></div>
+		<div class="item2"><img id="fadeIn2" width="500" height="500" src="./assets/frog.png"></div>
 		<div class="item3"><img id="fadeIn" width="400" height="550" src="./assets/waluigi.png"></div>
+		<div class="item4"><img id="fadeIn3" width="400" height="500" src="./assets./barry.png"></div>
 		<div class="item5"><a class="button" href="./jsGameMenu.html">Return to Menu</a></div>
-		<div class="item6" onclick="changeText()" style="cursor:pointer;"><h2 id="text">Welcome to Doki Doki ACM!</h2></div>
+		<div class="item6" onclick="changeText()" style="cursor:pointer;"><h2 id="text"></h2></div>
 	</body>
 	
 </body>
