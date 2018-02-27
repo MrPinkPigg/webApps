@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online Quiz</title>
+	<script type="text/javascript">
+		function randColor () {
+				var code1 = (Math.floor(Math.random()*255));
+				var code2 = (Math.floor(Math.random()*255));
+				var code3 = (Math.floor(Math.random()*255));
+
+				var color = "rgb("+code1+", "+code2+", "+code3+")";
+
+				//console.log(color);
+				return color;
+			}
+
+		function textColor () {
+				document.getElementById("textColor").style.color = randColor();
+			}
+
+		setInterval(textColor, 100);
+	</script>
+	<style type="text/css">
+		h1 {
+			text-align: center;
+			background-color: #669ae2;
+		}
+
+		h2 {
+			text-align: center;
+			background-color: #c10b0b;
+			color: #f7ff14;
+		}
+
+		body {
+			text-align: center;
+		}
+
+		label > input{ /* HIDE RADIO */
+  			visibility: hidden; /* Makes input not-clickable */
+  			position: absolute; /* Remove input from document flow */
+		}
+		
+		label > input + img{ /* IMAGE STYLES */
+  			cursor:pointer;
+  			border:2px solid transparent;
+		}
+		
+		label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  			border:5px solid #f00;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="textColor">Answer these <b>SIX</b> questions about memes and we'll describe your <i>perfect boyfriend</i></h1>
+	
+
+	<h2><b>QUESTION ONE</b></h2>
+	<label>
+  		<input type="radio" name="q1" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q1" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	<br>
+	<label>
+  		<input type="radio" name="q1" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q1" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+
+	<br><br>
+	
+
+	<h2>QUESTION TWO</h2>
+	<label>
+  		<input type="radio" name="q2" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q2" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	<br>
+	<label>
+  		<input type="radio" name="q2" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q2" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+
+	<br><br>
+	
+
+	<h2>QUESTION THREE</h2>
+	<label>
+  		<input type="radio" name="q3" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q3" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	<br>
+	<label>
+  		<input type="radio" name="q3" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q3" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+
+	<br><br>
+	
+
+	<h2>QUESTION FOUR</h2>
+	<label>
+  		<input type="radio" name="q4" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q4" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	<br>
+	<label>
+  		<input type="radio" name="q4" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q4" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+
+	<br><br>
+
+
+	<h2>QUESTION FIVE</h2>
+	<label>
+  		<input type="radio" name="q5" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q5" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	<br>
+	<label>
+  		<input type="radio" name="q5" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+	
+	<label>
+  		<input type="radio" name="q5" value="small">
+  		<img height="200px" width="400px" src="https://blogs.nvidia.com/wp-content/uploads/2016/07/TITAN_X_blog.jpg">
+	</label>
+</body>
+</html>
