@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online Quiz</title>
+	<script type="text/javascript">
+		function randColor () {
+				var code1 = (Math.floor(Math.random()*255));
+				var code2 = (Math.floor(Math.random()*255));
+				var code3 = (Math.floor(Math.random()*255));
+
+				var color = "rgb("+code1+", "+code2+", "+code3+")";
+
+				//console.log(color);
+				return color;
+			}
+
+		function textColor () {
+				document.getElementById("textColor").style.color = randColor();
+			}
+
+		setInterval(textColor, 100);
+	</script>
+	<style type="text/css">
+		h1 {
+			text-align: center;
+			background-color: #669ae2;
+		}
+
+		h2 {
+			text-align: center;
+			background-color: #c10b0b;
+			color: #f7ff14;
+		}
+
+		body {
+			text-align: center;
+		}
+
+		label > input{ /* HIDE RADIO */
+  			visibility: hidden; /* Makes input not-clickable */
+  			position: absolute; /* Remove input from document flow */
+		}
+		
+		label > input + img{ /* IMAGE STYLES */
+  			cursor:pointer;
+  			border:2px solid transparent;
+		}
+		
+		label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  			border:5px solid #f00;
+		}
+
+		html {
+			background-color: #2acbd3;
+
+			background: linear-gradient(316deg, #2acbd3, #38db13);
+			background-size: 400% 400%;
+
+			-webkit-animation: AnimationName 6s ease infinite;
+			-moz-animation: AnimationName 6s ease infinite;
+			animation: AnimationName 6s ease infinite;
+		}
+
+		@-webkit-keyframes AnimationName {
+		    0%{background-position:2% 0%}
+		    50%{background-position:99% 100%}
+		    100%{background-position:2% 0%}
+		}
+
+		@-moz-keyframes AnimationName {
+		    0%{background-position:2% 0%}
+		    50%{background-position:99% 100%}
+		    100%{background-position:2% 0%}
+		}
+
+		@keyframes AnimationName { 
+		    0%{background-position:2% 0%}
+		    50%{background-position:99% 100%}
+		    100%{background-position:2% 0%}
+		}
+	</style>
+</head>
+<body>
+	<h1 id="textColor">Answer these <b>FIVE</b> questions about and we'll describe your <i>perfect boyfriend</i></h1>
+	
+
+	<form action="quiz.php" method="GET">
+		<h2>QUESTION ONE <br> Which frog is the best frog?</h2>
+		<label>
+	  		<input type="radio" name="q1" id="q1_1" value="1">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/nGOSLx/28xp_pepefrog_master315.jpg">
+		</label>
+		
+		<label>
+	  		<input type="radio" name="q1" id="q1_2" value="2">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/ft6E0x/665.jpg">
+		</label>
+		<br>
+		<label>
+	  		<input type="radio" name="q1" id="q1_3" value="3">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/nD9TSc/But_Thats_None_Of_My_Business.jpg">
+		</label>
+
+		<label>
+	  		<input type="radio" name="q1" id="q1_4" value="4">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/nx6Wfx/Dat_Boi.jpg">
+		</label>
+		
+
+		<br><br>
+		
+
+		<h2>QUESTION TWO <br> Doki doki?</h2>
+		<label>
+	  		<input type="radio" name="q2" id="q2_1" value="1">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/cXz6DH/K2l6p8q5c5pz.png">
+		</label>
+		
+		<label>
+	  		<input type="radio" name="q2" id="q2_2" value="2">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/kg9Z0x/Mon2.png">
+		</label>
+		<br>
+		<label>
+	  		<input type="radio" name="q2" id="q2_3" value="3">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/fGtu0x/Say2.png">
+		</label>
+
+		<label>
+	  		<input type="radio" name="q2" id="q2_4" value="4">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/ekuZ0x/Yuri_school_3.png">
+		</label>
+		
+
+		<br><br>
+		
+
+		<h2>QUESTION THREE <br> Which of these is the best source of memes?</h2>
+		<label>
+	  		<input type="radio" name="q3" id="q3_1" value="1">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/eXfm2n/brand.gif">
+		</label>
+		
+		<label>
+	  		<input type="radio" name="q3" id="q3_2" value="2">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/bvqVTS/facebook_logo.jpg">
+		</label>
+		<br>
+		<label>
+	  		<input type="radio" name="q3" id="q3_3" value="3">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/hz2Na7/reddit_logo_vertical.jpg">
+		</label>
+
+		<label>
+	  		<input type="radio" name="q3" id="q3_4" value="4">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/kDijoS/4chan_logo.png">
+		</label>
+		
+
+		<br><br>
+		
+
+		<h2>QUESTION FOUR <br> Does Bruno Mars is Gay?</h2>
+		<label>
+	  		<input type="radio" name="q4" id="q4_1" value="1">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/gUt62n/download.png">
+		</label>
+		
+		<label>
+	  		<input type="radio" name="q4" id="q4_2" value="2">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/c6m4oS/images.png">
+		</label>
+		<br>
+		<label>
+	  		<input type="radio" name="q4" id="q4_3" value="3">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/gsrthn/BN_JU172_FBpoll_E_20150810125223.jpg">
+		</label>
+
+		<label>
+	  		<input type="radio" name="q4" id="q4_4" value="4">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/iQdTF7/Untitled.png">
+		</label>
+		
+
+		<br><br>
+
+
+		<h2>QUESTION FIVE <br> ?̧̰̱̼̠́̋ͭ͢͜ͅ?̳̤̆̍͆̈́̉͐̉̓͆͘?̛͚̪͈͓̩̹̂ͤ́͒ͭ͑̀?̵̯̰͕̘͒̑́ͯ̀ͅ?̊ͦ̏ͩ҉̻͇͓̤̹͎</h2>
+		<label>
+	  		<input type="radio" name="q5" id="q5_1" value="1">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/e0Fdhn/b8nhip9w6oj01.jpg">
+		</label>
+		
+		<label>
+	  		<input type="radio" name="q5" id="q5_2" value="2">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/mfw7a7/dy4okatb7v901.jpg">
+		</label>
+		<br>
+		<label>
+	  		<input type="radio" name="q5" id="q5_3" value="3">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/jAeSa7/5fqogehb3wb01.jpg">
+		</label>
+
+		<label>
+	  		<input type="radio" name="q5" id="q5_4" value="4">
+	  		<img height="200px" width="400px" src="https://image.ibb.co/cMUh8S/z3kfn4ivorfz.jpg">
+		</label>
+	
+		<br><br>
+
+		<input style="height: 50px; width: 100px;" type="submit" name="submit">
+	</form>
+</body>
+</html>
