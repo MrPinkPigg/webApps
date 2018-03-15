@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kramerton public library welcomes you!</title>
+<script>
+/*
+Most of these javascript functions are used to fetch information using AJAX and putting them into the appropriate HTML elements. Notice that DIV and SPAN tags are used to denote the sections where AJAX will insert stuff (using innerHTML)
+*/
+
+// This is executed when the page is loaded. It should retrieve user info from a php file and insert it into the proper element.
+function init() {
+ document.getElementById("userinfo").innerHTML="Loading user info...";
+ if (window.XMLHttpRequest){
+  x = new XMLHttpRequest();
+ } else { alert("Your browser sucks."); window.location="disney.com";}
+ x.onreadystatechange = function(){
+  if(x.readyState==4 && x.status==200){
+   document.getElementById("userinfo").innerHTML=x.responseText;
+  }
+ }
+ x.open("GET","getuserinfo.php",true);
+ x.send();
+}
+
+// This is executed when the user clicks the button for transaction history
+function gethistory() {
+ x = new XMLHttpRequest();
+ x.onreadystatechange = function() {
+  if(x.readyState==4 && x.status==200){
+   document.getElementById("mainarea").innerHTML=x.responseText;
+   // If gettranhist.php returns a notice that the user isn't logged in, then this should redirect to the login page after 1 second:
+   if(x.responseText=="Not logged in!") {setTimeout(function() {document.location='index.html';},1000)}
+   if (x.responseText.indexOf("Bad Login Cookie!") > -1){setTimeout(function() {document.location='index.html';},1000)}
+  }
+ }
+ document.getElementById("mainarea").innerHTML="Loading Transactions...";
+ x.open("GET","gettranhist.php",true);
+ x.send();
+}
+
+// TODO:
+function getbooksearch() {
+ x = new XMLHttpRequest();
+ x.onreadystatechange = function() {
+  
+  // TODO
+  
+ }
+ //x.open("GET","getbooksearch.php",true);
+ //x.send();
+}
+
+
+</script>
+<style>
+.box {border: 2px solid black;}
+td {border: 1px solid black;}
+</style>
+</head>
+<body onload="init()">
+You are:<span id="userinfo"></span><br><br>
+Menu:<span class="box" id="booksout" onclick="gethistory()"><a href="javascript:void(0);">Transaction History</a></span>
+<span class="box" id="booksearch" onclick="getbooksearch()"><a href="javascript:void(0);">Book Search</a></span>
+<br>Below this is the main area that gets loaded by AJAX
+<div id="mainarea"></div>
+<div id="footer"></div>
+</body>
+</html>
