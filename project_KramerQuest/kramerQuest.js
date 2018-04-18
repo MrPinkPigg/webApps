@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script>
 var key_w = false;
 var key_a = false;
 var key_s = false;
@@ -36,14 +32,3 @@ function keyupper(event) {
  if (k == 83) { key_s = false; }
  if (k == 68) { key_d = false; }
 }
-
-</script>
-<style>
-#moveme {
- position: absolute;
-}
-</style>
-</head>
-<body onload="setInterval(function(){gameloop();},35)" onkeydown="keydowner(event)" onkeyup="keyupper(event)">
-<div id="moveme"><img src="./project_KramerQuest/assets/captain.png"></div></body>
-</html>

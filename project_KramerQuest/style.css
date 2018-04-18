@@ -1,0 +1,18 @@
+#moveme {
+ position: absolute;
+}
+
+#game {
+	position: absolute;
+	border: 2px solid #0000ff;
+	width: 99%;
+	height: 800px;
+	text-align: center;
+}
+
+
+.heading {
+	text-align: center;
+	font-size: 64px;
+	color: #0000ff;
+}
