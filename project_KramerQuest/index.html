@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<script src="./kramerQuest.js"></script>
-	<link rel="stylesheet" href="./style.css">
+    <title>KramerQuest</title>
 
-	<title>Game Page</title>
+		<link rel="stylesheet" href="./style.css">
 </head>
-<body onload="setInterval(function(){gameloop();},35)" onkeydown="keydowner(event)" onkeyup="keyupper(event)">
-	<h1 class="heading">KramerQuest</h1>
 
-	<canvas id="game">
-		<div id="moveme"><img src="./assets/captain.png"></div></body>
-	</canvas>
+<body>
+	<h1 style="text-align: center">KramerQuest!</h1>
+  <h3 style="text-align: center">Defeat all the bosses to win!<br>Arrow keys or WASD to move, and space to attack (in direction of movement)</h3>
+
+    <canvas id="canvas"></canvas>
+
+		<br><br><br><br><br>
+		<p>Dont' mind this, it's just phots that i could only refrence by id</p>
+		<img src="./assets/captain.png" id="capt" width="55" height="55">
+
+
+		<script src="./kramerQuest.js"></script>
 </body>
-</html>
